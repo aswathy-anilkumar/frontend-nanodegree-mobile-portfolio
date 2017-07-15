@@ -21,7 +21,13 @@ Some useful tips to help you get started:
   $> cd /path/to/your-project-folder
   $> ./ngrok http 8080
   ```
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
+  To optimize page speed
+  - Inline *style.css* , since it's a very small.
+  - *Minified* all HTML files using HTML minifier.
+  - Removed link to *Open Sans fonts* since font style was already declared in the stylesheet
+  - Used *optimized* images.
+  - Added *media="print"* for print.css so it will call this CSS only when printing.
+  - Moved JS to the end of body in *index.html*
 
 #### Part 2: Optimize Frames per Second in pizza.html
 
